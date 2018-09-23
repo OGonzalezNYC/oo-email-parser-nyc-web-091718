@@ -1,15 +1,15 @@
-# Build a class EmailParser that accepts a string of unformatted
-# emails. The parse method on the class should separate them into
-# unique email addresses. The delimiters to support are commas (',')
-# or whitespace (' ').
+# Practice defining a class and using an attr_accessor to create setter and getter methods.
+# Use TDD to write working code.
 
-#The parse method should, additionally, only return unique emails.
+# Build a class EmailParser that accepts a string of unformatted
+# email addresses. The parse method on the class should separate them into
+# unique email addresses. The delimiters to support are commas (',')
+# or whitespace (' '). The parse method should, additionally, only return unique emails.
 class EmailParser
   attr_accessor :string_of_email_addresses
 
   def initialize(string_of_email_addresses)
     @string_of_email_addresses = string_of_email_addresses
-    #@string_of_email_addresses = string_of_email_addresses
   end
 
   def parse
